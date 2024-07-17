@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Bruno Ace SC", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 128px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.fz-1 {
+  font-size: 32px;
+}
+
+.fz-2 {
+  font-size: 24px;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+.df {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.mr-1 {
+  margin-right: 16px;
+}
+
+.mr-2 {
+  margin-right: 24px;
+}
+
+.topbar {
+  background-color: #000000;
+}
+.topbar .container {
+  align-items: center;
+  padding: 52px 0px;
+}
+.topbar .container a {
+  color: #D1D1D1;
+}
+
+.title {
+  background-color: #000000;
+}
+.title .container {
+  align-items: center;
+}
+.title .title-right {
+  padding: 232px 0 192px 24px;
+}
+.title .title-right h2 {
+  color: #FFFFFF;
+}
+.title .title-right h1 {
+  color: #00FFA3;
+  text-align: right;
+}
+.title .contact-btn {
+  /*照設計稿字體16px太大??*/
+  font-size: 13px;
+  border-radius: 32px;
+  border: none;
+  padding: 12px 24px;
+  margin-left: auto;
+  align-items: center;
+  gap: 4px;
+}
+.title .contact-btn:hover {
+  cursor: pointer;
+}
+
+.intro {
+  background-image: url(2023week2/background-img.png);
+  color: #FFFFFF;
+  padding: 160px 0;
+}
+.intro .intro-left {
+  width: 526px;
+}
+.intro .intro-text {
+  margin: 36px 0 32px 0;
+}
+
+.about {
+  padding: 160px 0;
+}
+.about .about-left {
+  width: 636px;
+  flex-wrap: wrap;
+  margin: 22px 0;
+}
+.about .about-left li {
+  width: 306px;
+  padding: 16px;
+  margin: 24px 0;
+  border: 1px #E3E3E3 solid;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.0784313725));
+}
+.about .about-left .card-title {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.about .about-right {
+  width: 526px;
+  flex-direction: column;
+}
+
+.contact {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  padding: 96px 0;
+}
+.contact .container {
+  align-items: center;
+}
+.contact .contact-title {
+  color: #FFFFFF;
+}
+.contact .contact-title img {
+  width: 100px;
+  height: 100px;
+}
+.contact .link {
+  width: 526px;
+}
+.contact .link a {
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.0784313725));
+}
+.contact .link a:hover {
+  filter: drop-shadow(0px 0px 16px rgba(144, 148, 255, 0.8980392157));
+}
+
+.project {
+  padding: 160px 0;
+}
+.project .project-title {
+  margin-left: 550px;
+  margin-bottom: 16px;
+}
+.project .work-right {
+  width: 856px;
+  margin-left: 24px;
+  flex-direction: column;
+}
+.project .work-aside {
+  width: 636px;
+}
+.project .work-aside .contact-btn {
+  margin-top: 76px;
+  width: 185px;
+  padding: 12px 24px 12px 24px;
+  gap: 4px;
+  border-radius: 32px;
+  border: none;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.project .work-aside .contact-btn:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 40px 0;
+  text-align: center;
+  color: #FFFFFF;
+}/*# sourceMappingURL=all.css.map */

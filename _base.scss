@@ -1,0 +1,61 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: "Bruno Ace SC", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+h1 {
+    font-size: 128px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+.fz-1 {
+    font-size: 32px;
+}
+
+.fz-2 {
+    font-size: 24px;
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.df {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.mr-1 {
+    margin-right: 16px;
+}
+
+.mr-2 {
+    margin-right: 24px;
+}
